@@ -108,7 +108,7 @@ body {
 .btn-quote:hover {
     background-color: #3777bd;
     /* Darker blue on hover */
-    color: #0e0d0d;
+    color: white;
 }
 
 .marq {
@@ -157,11 +157,12 @@ body {
 }
 
 .bg-rose {
-    background-color: #f18b8b;
+    background-color: white;
 }
 
 .bg-yellow {
-    background-color: #ebd05b;
+    background-color:white;
+    
 }
 
 @media (max-width: 768px) {
@@ -557,4 +558,48 @@ footer i {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+/* .product-card section  */
+
+.product-section .card {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.product-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    text-align: center;
+  }
+
+  .product-section .card-title {
+    font-size: 18px;
+  }
+
+  .product-section .card-text {
+    font-size: 14px;
+  }
+}
+
+/* contact us section design */
+.contact-section .form-control {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.contact-section .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #fff;
+  background-color: #f1f1f1;
+  color: #000;
 }

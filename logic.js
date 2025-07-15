@@ -55,3 +55,20 @@
     iframe.src = iframe.src; // stop video
   }
 
+  
+  let currentVisible = 4; // Show first 4
+  const cards = document.querySelectorAll('.product-card');
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+  loadMoreBtn.addEventListener('click', () => {
+    let count = 0;
+    for (let i = currentVisible; i < cards.length && count < 4; i++) {
+      cards[i].classList.remove('d-none');
+      count++;
+    }
+    currentVisible += count;
+    if (currentVisible >= cards.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  });
+
