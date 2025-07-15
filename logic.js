@@ -39,3 +39,19 @@
 
     updateCount();
   });
+
+  // this is for video banner
+
+  
+  function playVideo() {
+    document.getElementById("videoFrame").style.display = "block";
+    document.querySelector(".video-thumbnail").style.display = "none";
+  }
+
+  function closeVideo() {
+    document.getElementById("videoFrame").style.display = "none";
+    document.querySelector(".video-thumbnail").style.display = "block";
+    const iframe = document.querySelector(".video-frame iframe");
+    iframe.src = iframe.src; // stop video
+  }
+
