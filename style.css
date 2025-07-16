@@ -551,14 +551,34 @@ footer i {
   .play-icon {
     font-size: 40px;
   }
-  
+
   .close-btn {
     width: 24px;
     height: 24px;
     font-size: 16px;
     line-height: 24px;
+    top: -8px;
+    right: -8px;
+  }
+
+  .iframe-wrapper {
+    padding-bottom: 56.25%; /* Keep 16:9 ratio */
+    height: auto;
+  }
+
+  .iframe-wrapper iframe {
+    height: 100%;
+  }
+
+  .video-frame {
+    margin-top: 10px;
+  }
+
+  .video-thumbnail img {
+    border-radius: 4px;
   }
 }
+
 
 /* .product-card section  */
 
@@ -628,3 +648,8 @@ footer i {
   .accordion-body:hover {
     background-color: #e9f1ff; /* Light blue on hover */
   }
+
+  .blue-border {
+  border: 2px solid #042a64 !important; /* Bootstrap blue */
+  border-radius: 8px;        /* Optional: rounded corners */
+}
