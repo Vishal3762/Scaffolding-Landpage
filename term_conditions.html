@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+              background: linear-gradient(to top, rgba(1, 25, 53, 0.9), rgba(0, 168, 255, 0.1));
+            color: #fff;
+        }
+
+        .banner {
+            background: #262626;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-bottom: 10px;
+            background: #fff;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .home-btn:hover {
+            background: #f1f1f1;
+        }
+
+        .terms-section {
+            padding: 40px 20px;
+        }
+
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #131313;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="https://buildrich.in/images/Logo/Buildrich-Logo.jpeg" alt="Buildrich Logo" width="130"
+                    class="me-2">
+
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler bg-primary " type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+       <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+    <div class="d-flex gap-2">
+        <!-- Back Button -->
+        <a href="index.html" class="btn-quote rounded-pill">
+            Back To Home
+        </a>
+
+        <!-- Quote Button -->
+        <a href="https://wa.me/917030311599?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." 
+           target="_blank" class="btn-quote rounded-pill">
+            Get Free Quote
+        </a>
+    </div>
+</div>
+
+        </div>
+    </nav>
+
+  <!-- about us section -->
+   <!-- About us section design -->
+    <section class="py-5 bg-white" id="aboutus">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-md-4 text-center">
+        <img src="images/checklist1.png" alt="Policy and Trust" class="img-fluid" style="max-height: 300px;">
+      </div>
+      <!-- Text Content -->
+      <div class="col-md-8">
+        <h2 class="fw-bold mb-3 headline">
+          Why <span class="buildrich-highlight">Terms & Conditions</span> Matter at Buildrich?
+        </h2>
+        <p class="text-muted about-description">
+          At <strong>Buildrich</strong>, we value transparency, trust, and long-term relationships with our clients. Our <strong>Terms & Conditions</strong> are designed to clearly define the mutual responsibilities between us and our customers—ensuring a smooth, reliable, and secure experience from start to finish.
+           Whether you're renting high-performance <strong>construction equipment</strong> or exploring our range of <strong>scaffolding materials</strong>, these policies help set clear expectations, protect your interests, and ensure full compliance with safety and legal standards.
+            By understanding our terms, you’re not only safeguarding your project—you’re also partnering with a company that believes in fairness, accountability, and customer-first service. That’s the <strong>Buildrich Promise</strong>.
+       
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- This is the card where you show all terms -->
+
+
+    <section class="terms-section">
+        <div class="terms-grid">
+            <div class="card">
+                <h3>1. Introduction</h3>
+                <p class="text-muted">These Terms & Conditions ("Terms") govern your use of Buildrich Construction
+                    Equipment Pvt. Ltd.'s rental services. By placing a rental order or using our equipment, you agree
+                    to be legally bound by these Terms.</p>
+            </div>
+
+            <div class="card">
+                <h3>2. User Responsibilities</h3>
+                <ul>
+                    <li class="text-muted">Provide accurate personal and project information at booking.</li>
+                    <li class="text-muted">Use all equipment according to manufacturer guidelines and safety norms.</li>
+                    <li class="text-muted">Ensure operators are trained and authorized.</li>
+                    <li class="text-muted">Inspect equipment on delivery and report any faults immediately.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>3. Rental Agreement</h3>
+                <ul>
+                    <li class="text-muted">Rental starts upon delivery and ends on return.</li>
+                    <li class="text-muted">Delayed returns incur extra charges.</li>
+                    <li class="text-muted">Equipment must be returned in good condition—reasonable wear accepted.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>4. Payment Terms</h3>
+                <ul>
+                    <li class="text-muted">All charges are payable in advance.</li>
+                    <li class="text-muted">Modes: UPI, Net Banking, Credit/Debit Cards.</li>
+                    <li class="text-muted">Late payment may delay delivery or lead to collection efforts.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>5. Damage & Liability</h3>
+                <ul>
+                    <li class="text-muted">Lessee bears cost for damage beyond normal wear.</li>
+                    <li class="text-muted">Repairs charged as per market rates.</li>
+                    <li class="text-muted">Security deposit may be required.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>6. Refund Policy</h3>
+                <ul>
+                    <li class="text-muted">Full refund if canceled 24+ hours before delivery.</li>
+                    <li class="text-muted">No refund post-dispatch or on-site issues.</li>
+                    <li class="text-muted">Refunds within 7–10 business days.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>7. Termination of Service</h3>
+                <ul>
+                    <li class="text-muted">Service may be terminated if equipment is misused.</li>
+                    <li class="text-muted">Unpaid fees or violations can result in termination.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>8. Changes to Terms</h3>
+                <p class="text-muted">We may update these Terms. Continued use implies acceptance. Latest version will
+                    be on our website.</p>
+            </div>
+
+            <div class="card">
+                <h3>9. Governing Law</h3>
+                <p class="text-muted">These Terms are governed by Indian law. Disputes are under Pune jurisdiction.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+    <!-- Footer section design -->
+
+    <footer style="background: #001f3f" class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <div class=" d-flex align-items-center">
+                        <!-- <img src="https://buildrich.in/images/Logo/Buildrich-Logo.jpeg" alt="Buildrich Logo" width="80"
+                            class="me-2 img-fluid"> -->
+                        <h1 class="fw-bold display-5 text-white">BuildRich</h1>
+
+                    </div>
+                    <p class="">Supplying premium construction & scaffolding equipment with quality assurance across
+                        India.</p>
+                    <div class="d-flex gap-2">
+                        <a href="https://www.facebook.com/buildrich.in" class="text-white"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/buildrich.in/#" class="text-white"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/buildrich-construction-equipment-pvt-ltd/"
+                            class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/buildrich.in" class="text-white"><i
+                                class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3">
+                    <h5 class=" mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#products" class="text-white text-decoration-none ">Scaffolding
+                                Rental</a>
+                        </li>
+                        <li class="mb-2"><a href="#products" class="text-white text-decoration-none ">Construction
+                                Tools</a>
+                        </li>
+                        <li class="mb-2"><a href="#aboutus" class="text-white text-decoration-none ">Machinery Hire</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none ">Support & Delivery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#contactus" class="text-white text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                    <h5 class=" mb-4">Contact Us</h5>
+                    <p><i class="fas fa-phone-alt me-2"></i> +91 7030 31 1599</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Sr. No. 31/5/1, Besides Akemi Business School,
+                        Marunji Rd, (Marunji), Wakad Pune - 411057</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@buildrich.in
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-light my-4">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                Copyright
+                &copy; 2025 <strong style="color:rgb(248, 248, 248)">Buildrich Group</strong> All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery & Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
