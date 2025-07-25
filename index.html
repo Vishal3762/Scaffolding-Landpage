@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    
+
 </head>
 
 <body>
@@ -61,28 +61,32 @@
     <!-- Hero Banner Section -->
     <!-- Hero Banner Section -->
     <section class="hero-banner position-relative text-white">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="videos/about-us2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Optional dark overlay for readability -->
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <!-- Text Content -->
         <div class="container position-relative z-1">
-            <div class="row align-items-center flex-column-reverse flex-lg-row">
-
-                <!-- Left Text (on top for mobile) -->
-                <div class="col-lg-6 text-center text-lg-start mt-4 mt-lg-0">
-                    <h1 class="fw-bold display-5 text-white">Build Smarter, Build Stronger</h1>
-                    <p class="lead mt-3 text-white">In the context of construction and real estate, "building your
-                        vision" refers to taking architectural plans or a design concept and physically constructing a
-                        building or property that matches that vision.</p>
-                    <a href="#products" class="btn btn-light  fw-bold px-4 py-3 mt-3 rounded-pill Explore">Explore
-                        Products </a>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-6 d-flex justify-content-center">
-                    <img src="https://tf.insomniacafe.org/recentcons/assets/img/banner/v2/profile-img-1.png"
-                        alt="Construction Equipment" class="img-fluid rounded hero-img" />
+            <div class="row justify-content-center align-items-center text-center min-vh-100">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold display-4 text-white">Build Smarter, Build Stronger</h1>
+                    <p class="lead mt-3 text-white">
+                        In the context of construction and real estate, "building your vision" refers to taking
+                        architectural
+                        plans or a design concept and physically constructing a building or property that matches that
+                        vision.
+                    </p>
+                    <a href="#products" class="btn btn-light fw-bold px-4 py-3 mt-3 rounded-pill">Explore Products</a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="service-cards position-relative z-1">
         <div class="container">
@@ -155,10 +159,9 @@
             <div class="row align-items-center">
                 <!-- video add -->
                 <div class="col-md-5 text-center">
-                    <video autoplay muted loop playsinline class="img-fluid" style="max-height: 400px;">
-                        <source src="videos/about-us2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <img src="https://tf.insomniacafe.org/recentcons/assets/img/banner/v2/profile-img-1.png"
+                        alt="Construction Equipment" class="img-fluid rounded hero-img" alt="About Us" class="img-fluid"
+                        style="max-height: 350px;">
                 </div>
                 <!-- Text Content -->
                 <div class="col-md-7">
@@ -609,6 +612,8 @@ Counter section start -->
     </section>
 
 
+
+
     <!-- contact us section  -->
     <section class="contact-section text-white py-5" id="contactus"
         style="background: linear-gradient(90deg, #5a83f5 0%, #01274d 100%);">
@@ -652,6 +657,8 @@ Counter section start -->
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -707,6 +714,16 @@ Counter section start -->
     </section>
 
 
+
+    <!-- google review -->
+
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <section class="google-review py-5" id="blogs">
+        <div class="container">
+            <div class="elfsight-app-324d8fa4-1b59-4a3a-a842-017f7bf4b5b6" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
     <!-- this is the vision and mission section design here -->
 
     <!-- vision and mission section -->
@@ -753,8 +770,8 @@ Counter section start -->
 
 
     <!-- team section design -->
-    
-    
+
+
 
 
 
@@ -1069,19 +1086,21 @@ Counter section start -->
     <!-- sticky button for social media -->
 
     <div class="social-sticky-icons">
-        <a href="https://www.facebook.com/" target="_blank" class="facebook" title="Facebook">
+        <a href="https://www.facebook.com/buildrich.in" target="_blank" class="facebook" title="Facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" class="linkedin" title="LinkedIn">
+        <a href="https://www.linkedin.com/company/buildrich-construction-equipment-pvt-ltd/" target="_blank"
+            class="linkedin" title="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://www.youtube.com/" target="_blank" class="youtube" title="YouTube">
+        <a href="https://www.youtube.com/@BuildrichConstructionEquipment" target="_blank" class="youtube"
+            title="YouTube">
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://www.instagram.com/" target="_blank" class="instagram" title="Instagram">
+        <a href="https://www.instagram.com/buildrich.in/#" target="_blank" class="instagram" title="Instagram">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp" title="WhatsApp">
+        <a href="https://wa.me/917030311599" target="_blank" class="whatsapp" title="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -1101,7 +1120,7 @@ Counter section start -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Your custom JS -->
     <script src="logic.js"></script>
-    
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
 
 
 </body>
